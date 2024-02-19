@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.time.format.TextStyle;
 import java.util.Locale;
 
-@RestController()
+@RestController
 @RequestMapping("/api/v1")
 public class HomeWork2Controller {
 
