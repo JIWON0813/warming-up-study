@@ -6,10 +6,10 @@
 
 ## 문제1 결과
 요청  
-![img.png](img.png)
+![img.png](image/img.png)
 
 결과(id 1~5는 테스트용으로 제거)  
-![img_1.png](img_1.png)
+![img_1.png](image/img_1.png)
 
 ### 한걸음 더
 long을 사용하는 이유  
@@ -23,18 +23,18 @@ int형을 사용하면 21억정도가 넘어가는 순간 오버플로우 에러
 ## 문제2 결과
 is_sale - bool 타입으로 관리 0 - false , 1 - true
 요청  
-![img_3.png](img_3.png)
+![img_3.png](image/img_3.png)
 
 결과  
-![img_2.png](img_2.png)
+![img_2.png](image/img_2.png)
 
 ## 문제3 결과
 결과  
 API  
-![img_4.png](img_4.png)
+![img_4.png](image/img_4.png)
 
 DB(0 - false(팔리지 않은 것) / 1 - true)  
-![img_5.png](img_5.png)
+![img_5.png](image/img_5.png)
 
 SUM 과 GROUP BY를 사용해서 결과를 받다보니 소스가 조금 이상해진 것 같습니다..  
 문제3의 소스가 마음에 들지 않아 더 좋은 방법의 피드백 주시면 고쳐보겠습니다
