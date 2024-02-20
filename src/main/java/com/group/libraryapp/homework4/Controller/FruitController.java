@@ -18,18 +18,19 @@ public class FruitController {
 
 
     @PostMapping("/fruit")
-    public void save(FruitCreateRequest fruitCreateRequest){
+    public void save(@RequestBody FruitCreateRequest fruitCreateRequest){
         fruitService.save(fruitCreateRequest);
     }
 
     @PutMapping("/fruit")
-    public void updateIsSale(FruitUpdateIsSaleRequest fruitUpdateIsSaleRequest){
+    public void updateIsSale(@RequestBody FruitUpdateIsSaleRequest fruitUpdateIsSaleRequest){
         fruitService.updateIsSale(fruitUpdateIsSaleRequest);
     }
 
     @GetMapping("/fruit/stat")
     public AmountByNameResponse amountByName(@RequestParam String name){
-        fruitService.
+        var response = fruitService.amountBySale(name);
+        return response;
     }
 
 }
