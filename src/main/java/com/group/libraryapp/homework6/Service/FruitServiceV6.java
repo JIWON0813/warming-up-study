@@ -3,7 +3,7 @@ package com.group.libraryapp.homework6.Service;
 import com.group.libraryapp.homework6.dto.request.FruitCreateRequest;
 import com.group.libraryapp.homework6.dto.request.FruitUpdateIsSaleRequest;
 import com.group.libraryapp.homework6.dto.response.AmountByNameResponse;
-import com.group.libraryapp.homework6.Repository.FruitRepository;
+import com.group.libraryapp.homework6.Repository.FruitRepositoryV6;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,17 +12,17 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class FruitServiceV6 {
 
-    private final FruitRepository fruitRepository;
+    private final FruitRepositoryV6 fruitRepositoryV6;
 
     public void save(FruitCreateRequest fruitCreateRequest){
-       fruitRepository.save(fruitCreateRequest);
+       fruitRepositoryV6.save(fruitCreateRequest);
     }
 
     public void updateIsSale(FruitUpdateIsSaleRequest fruitUpdateIsSaleRequest){
-        fruitRepository.updateIsSale(fruitUpdateIsSaleRequest);
+        fruitRepositoryV6.updateIsSale(fruitUpdateIsSaleRequest);
     }
 
     public AmountByNameResponse amountBySale(String name){
-        return fruitRepository.amountBySale(name);
+        return fruitRepositoryV6.amountBySale(name);
     }
 }

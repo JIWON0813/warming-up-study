@@ -1,4 +1,4 @@
-package com.group.libraryapp.homework6.Repository;
+package com.group.libraryapp.homework7.Repository;
 
 import com.group.libraryapp.homework6.dto.data.SalesAmountData;
 import com.group.libraryapp.homework6.dto.request.FruitCreateRequest;
@@ -16,7 +16,7 @@ import java.sql.SQLException;
 @Primary
 @Repository
 @RequiredArgsConstructor
-public class FruitMysqlRepository implements FruitRepository{
+public class FruitMysqlRepository implements FruitRepositoryV7 {
     private final JdbcTemplate jdbcTemplate;
 
     @Override
