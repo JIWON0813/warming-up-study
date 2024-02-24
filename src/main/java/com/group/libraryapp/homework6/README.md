@@ -2,37 +2,12 @@
 
 인프런 워밍업 클럽 0기 BE 과제 #6 소스 및 결과 
 
-## 문제1 결과
+## 결과
 요청  
-![img.png](image/img.png)
+![img_1.png](image/img_1.png)![img.png](image/img.png)
 
-결과(id 1~5는 테스트용으로 제거)  
-![img_1.png](image/img_1.png)
+결과
+![img.png](image/img.png)![img_1.png](image/img_1.png)
 
-### 한걸음 더
-long을 사용하는 이유  
-범위의 차이라 생각합니다.  
-int형을 사용하면 21억정도가 넘어가는 순간 오버플로우 에러가 납니다.  
-21억이란 숫자는 크지만 충분히 들어올 수 있는 범위기 때문에  
-포용 범위가 더 넓은 long으로 사용하는 것이 맞다고 생각합니다.  
-실제 업무를 하면서 금액이 21억이 넘는 경우가 있어 에러가 났던 경험이 있습니다.  
-(이 외에 다른 이유가 있으면 피드백 요청드립니다!)
 
-## 문제2 결과
-is_sale - bool 타입으로 관리 0 - false , 1 - true
-요청  
-![img_3.png](image/img_3.png)
-
-결과  
-![img_2.png](image/img_2.png)
-
-## 문제3 결과
-결과  
-API  
-![img_4.png](image/img_4.png)
-
-DB(0 - false(팔리지 않은 것) / 1 - true)  
-![img_5.png](image/img_5.png)
-
-SUM 과 GROUP BY를 사용해서 결과를 받다보니 소스가 조금 이상해진 것 같습니다..  
-문제3의 소스가 마음에 들지 않아 더 좋은 방법의 피드백 주시면 고쳐보겠습니다
+다른 결과는 이전과 같아 repository로 변경 후 통신 및 기능이 정상적으로 동작하는지만 확인 완료
